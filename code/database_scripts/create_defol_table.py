@@ -20,4 +20,3 @@ defol['defol'] = np.where(defol['id'].isin(list(range(1,35))), 1, 0)
 defol_data = defol_data.rename(columns = {'Fire_ID' : 'fire_name'})
 defol_data = defol_data[['fire_name', 'years_defol', 'tsd']]
 defol = pd.merge(defol, defol_data, on='fire_name', how='inner')
-

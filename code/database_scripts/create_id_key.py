@@ -37,7 +37,3 @@ fire_key.columns = fire_key.columns.str.lower()
 
 #rename fire_id column to fire_name
 fire_key = fire_key.rename(columns ={'fire_id': 'fire_name'})
-
-#dups = fire_key['fire_name'].unique()
-
-#print(dups)
